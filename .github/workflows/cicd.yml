@@ -164,7 +164,7 @@ jobs:
       - name: Create PR to main
         run: |
           echo "📝 Creating PR to main"
-          gh pr create --base main --head develop --title "Release to production"
+          gh pr create --base main --head develop --title "Release to production" --body "Automated PR from develop to main"
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
